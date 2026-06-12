@@ -1,6 +1,6 @@
 PAGES=$(wildcard pages/*.html)
 ASSETS=$(wildcard assets/*)
-all: public $(subst pages/, public/, $(PAGES))
+all: docs $(subst pages/, docs/, $(PAGES))
 .PHONY: all clean test
 
 public/%.html: pages/%.html layout/before.html layout/after.html

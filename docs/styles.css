@@ -1,0 +1,68 @@
+html{
+	--accent-color: black;
+	font-family: sans-serif;
+}
+
+body {
+	color: var(--accent-color);
+	max-width: 55em;
+	margin: 1em auto;
+	padding: 0.5em;
+	
+}
+
+main {
+	font-size: 1em;
+}
+
+.header{
+	text-align: left;
+}
+
+h1, h2, h3{
+	color: var(--accent-color);
+	line-height: 1.2em;
+	padding: 0;
+	text-align: center;
+}
+
+h4 {
+	line-height: 1.2em;
+}
+
+nav {
+	text-align: left;
+	font-weight: bold;
+	font-size: 1.1em;
+	margin: 0;
+	padding-bottom: 0.6em;
+	padding-left: 0;
+}
+
+a {
+	text-decoration: none;
+	opacity: 70%;
+	color: var(--accent-color);
+}
+
+.contact{
+	padding-top: 0.5em;
+	text-align: center;
+	font-size: 1em;
+}
+
+a.current {
+	opacity: 100%;
+
+}
+
+a:hover {
+	opacity: 100%;
+}
+
+footer {
+	padding: 0.5em;
+	color: #666666;
+	font-size: 0.8em;
+	text-align: center;
+}
