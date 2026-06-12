@@ -6,7 +6,7 @@ mkdir public/
 cp -r assets/* public/
 for page in pages/*.html; do
 	echo -n "> building ${page#pages/}..."
-	sh ./scripts/buildpage.sh "$page"
+	bash ./scripts/buildpage.sh "$page"
 	echo "done"
 done
 echo "finished !"
