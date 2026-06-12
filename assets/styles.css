@@ -1,0 +1,56 @@
+html{
+	--accent-color: black;
+	font-family: sans-serif;
+}
+
+body {
+	font: 1.1em;
+	max-width: 55em;
+	margin: 1em auto;
+	padding: 0.5em;
+	
+}
+
+h1 {
+	text-align: left;
+	color: var(--accent-color);
+}
+
+h2{
+	padding: 0;
+	color: var(--accent-color);
+}
+
+nav ul {
+	text-align: left;
+	margin: 0;
+	padding-bottom: 1em;
+	padding-left: 0;
+}
+
+nav ul li {
+	display: inline;
+	font-weight: bold;
+}
+
+a {
+	text-decoration: none;
+	opacity: 70%;
+	color: var(--accent-color);
+}
+
+a.current {
+	opacity: 100%;
+
+}
+
+a:hover {
+	opacity: 100%;
+}
+
+footer {
+	padding: 0.5em;
+	color: #666666;
+	font-size: 0.8em;
+	text-align: center;
+}
