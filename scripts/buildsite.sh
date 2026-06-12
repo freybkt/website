@@ -1,12 +1,12 @@
 #!/bin/bash
 
 echo "Rebuilding site."
-rm -rf public/
-mkdir public/
+rm -rf docs/
+mkdir docs/
 cp -r assets/* public/
 for page in pages/*.html; do
 	echo -n "> building ${page#pages/}..."
-	bash ./scripts/buildpage.sh "$page"
+	sh ./scripts/buildpage.sh "$page"
 	echo "done"
 done
 echo "finished !"
