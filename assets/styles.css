@@ -45,6 +45,12 @@ a {
 	color: var(--accent-color);
 }
 
+.contact{
+	padding-top: 0.5em;
+	text-align: center;
+	font-size: 1em;
+}
+
 a.current {
 	opacity: 100%;
 
