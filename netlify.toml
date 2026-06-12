@@ -1,2 +1,3 @@
 [build]
+  command = "sh scripts/buildsite.sh"
   publish = "public"
