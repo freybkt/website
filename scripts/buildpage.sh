@@ -2,7 +2,7 @@
 
 FILE="${1}"
 TITLE=$(cat "${1}" | head -n 1)
-DATE=$(date "+%y/%m/%d")
+DATE=$(date "+%Y/%m/%d")
 
 function buildpage {
 	cat layout/before.html | sed "s~href=\"$FILE\"~href=\"$FILE\" class=\"current\"~" | sed "s~{{TITLE}}~$TITLE~"
