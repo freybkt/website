@@ -1,2 +1,2 @@
-new repo for my first website
+personal website, work in progress
 will update the project throughout the summer.
