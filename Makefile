@@ -3,17 +3,17 @@ ASSETS=$(wildcard assets/*)
 all: docs $(subst pages/, docs/, $(PAGES))
 .PHONY: all clean test
 
-public/%.html: pages/%.html layout/before.html layout/after.html
+docs/%.html: pages/%.html layout/before.html layout/after.html
 	./scripts/buildpage.sh $< > $@
 
 
-public: $(ASSETS)
+docs: $(ASSETS)
 	mkdir -p $@
 	cp $? $@
 	touch $@
 
 clean:
-	rm -rf public/
+	rm -rf docs/
 
 test: all
-	python3 -m http.server --directory public
+	python3 -m http.server --directory docs

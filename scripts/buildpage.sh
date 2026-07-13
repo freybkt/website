@@ -18,5 +18,5 @@ elif test ! -f "${1}"; then # et doit correspondre à une page existante
 	exit 1
 else # si tout va bien on construit la page dans public/
 	FILE="${1#pages/}"
-	buildpage "${1}" > "public/${FILE}"
+	buildpage "${1}" > "docs/${FILE}"
 fi
